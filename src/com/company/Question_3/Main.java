@@ -16,6 +16,7 @@ public class Main {
 
         Main main = new Main();
         main.populateArrayList();
+        main.models();
     }
 
     private void populateArrayList() {
@@ -27,5 +28,8 @@ public class Main {
         carsList.add(new Car("Tesla", "Model 3", "Grey"));
     }
 
-
+    private void models() {
+        System.out.println(model);
+    }
+//forgot how to label the item to print, but i know once you label it you print it.
 }
