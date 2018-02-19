@@ -13,4 +13,16 @@ public class Main {
 
     }
 
+     switch (example) {
+            case "cat":
+        break;
+
+
+    }
+//i know how to do this im just running out of time
 }
+
+
+
+
+
