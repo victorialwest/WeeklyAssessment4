@@ -10,6 +10,16 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // SEE CODE BELOW
+        // TO SEE THE MISSING ELEMENTS
 
     }
 }
+
+/*
+    FROM ANSWER KEY:
+
+    Menu menu = new Menu();
+    menu.startMenu();
+
+*/

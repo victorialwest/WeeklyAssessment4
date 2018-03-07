@@ -16,6 +16,11 @@ public class Main {
         you have been teleported to a volcano."
          */
 
+        /*
+
+        FROM ANSWER KEY:
+        This is the necessary code for the above tasks:
+
         System.out.println("Enter a number between 1 and 100");
         String userInput = input.nextLine();
 
@@ -28,7 +33,7 @@ public class Main {
         else (userInput >= 91 && userInput <= 100);
         System.out.println("Well, I hope you like it hot, you have been teleported to a volcano.");
 
-
+        */
 
 
 
