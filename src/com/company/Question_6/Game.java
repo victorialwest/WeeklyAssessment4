@@ -1,5 +1,8 @@
 package com.company.Question_6;
 
+
+// NO CHANGES WERE NECESSARY HERE
+
 public class Game {
 
     private String title;

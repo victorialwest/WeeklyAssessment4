@@ -7,18 +7,26 @@ import java.util.List;
 public class Library {
 
     private List<Game> gameLibrary = new ArrayList<Game>();
-    private final Menu menu = new menu;
+    private Menu menu;
+    /*
+    FROM THE ANSWER KEY:
+    This needed to be added
 
+    public Library(Menu menu) {
+        this.menu = menu;
+    }
 
-
+    */
 
 
     protected void addGame(Game game) {
         //Code goes here to add game to where ever we are saving game things to
         gameLibrary.add(game);
+        Menu menu = new Menu();
         menu.startMenu();
     }
 
+    // PLEASE LOOK BELOW FOR THE CORRECT METHOD
 
     protected void removeGame(int gameIndex) {
         if (gameLibrary.isEmpty()) {
@@ -28,8 +36,26 @@ public class Library {
             gameLibrary.remove(gameIndex);
             System.out.println("This game has been removed from your library.");
         }
+
+        Menu menu = new Menu();
         menu.startMenu();
     }
+
+    /*
+        FROM THE ANSWER KEY:
+        This was the missing method:
+
+        protected void removeGame(int gameIndex) {
+        if (gameLibrary.isEmpty()) {
+            System.out.println("There are no games to remove from the Library at this time.");
+        } else {
+            gameIndex -= gameIndex;
+            gameLibrary.remove(gameIndex);
+            System.out.println("This game has been removed from your library.");
+        }
+        menu.startMenu();
+    }
+     */
 
     protected void listGames() {
 
@@ -42,7 +68,23 @@ public class Library {
                 System.out.println(index++ + ". " + game.getTitle());
             }
         }
+
+        /*
+
+        PLEASE SEE BELOW
+
+        */
+
         System.out.println("\n");
+        Menu menu = new Menu();
         menu.startMenu();
     }
+
+     /*
+        From the Answer Key:
+
+        System.out.println("\n");
+        menu.startMenu();
+
+        */
 }
